@@ -41,7 +41,7 @@ class BooksApp extends React.Component {
       const arrayOfBooks = this.state.currentlyReading
       const indexOfBook = arrayOfBooks.indexOf(book)
 
-      if (value !== 'currentlyReading' && value !== 'none') {
+      if (value !== 'currentlyReading') {
         arrayOfBooks.splice(indexOfBook, 1)
       }
 
@@ -66,7 +66,7 @@ class BooksApp extends React.Component {
       const arrayOfBooks = this.state.wantToRead
       const indexOfBook = arrayOfBooks.indexOf(book)
 
-      if (value !== 'wantToRead' && value !== 'none') {
+      if (value !== 'wantToRead') {
         arrayOfBooks.splice(indexOfBook, 1)
       }
 
@@ -91,7 +91,7 @@ class BooksApp extends React.Component {
       const arrayOfBooks = this.state.read
       const indexOfBook = arrayOfBooks.indexOf(book)
 
-      if (value !== 'read' && value !== 'none') {
+      if (value !== 'read') {
         arrayOfBooks.splice(indexOfBook, 1)
       }
 

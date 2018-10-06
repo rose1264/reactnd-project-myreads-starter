@@ -14,7 +14,6 @@ class SearchBooks extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <div className="search-books">
         <div className="search-books-bar">
@@ -33,7 +32,6 @@ class SearchBooks extends Component {
                 this.props.currentlyReading.includes(book) ? shelf='currentlyReading' : null
                 this.props.wantToRead.includes(book) ? shelf='wantToRead' : null
                 this.props.read.includes(book) ? shelf='read' : null
-                console.log(shelf);
                 return (
                   <li key={book.id}>
                     <Book

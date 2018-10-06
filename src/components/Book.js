@@ -2,7 +2,10 @@ import React from 'react'
 import BookShelfChanger from './BookShelfChanger'
 
 const Book = props => {
-  const imageURL=props.book.imageLinks.thumbnail
+  let imageURL
+  (props.book.imageLinks ? imageURL=props.book.imageLinks.thumbnail:imageURL='')
+
+
   return (
     <div className="book">
       <div className="book-top">
